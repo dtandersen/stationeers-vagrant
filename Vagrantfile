@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
 
   config.ssh.forward_agent = true
+
   # may need to "vagrant plugin install vagrant-vbguest"
   config.vm.synced_folder "./", "/vagrant", type: "virtualbox", disabled: false
 
